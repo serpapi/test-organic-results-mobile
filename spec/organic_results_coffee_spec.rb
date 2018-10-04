@@ -3,7 +3,7 @@ describe "SerpApi Mobile JSON" do
   describe "Organic Results for Coffee" do
 
     before :all do
-      @response = HTTP.get 'http://localhost:3000/search.json?q=Coffee&location=Dallas&hl=en&gl=us&source=test&device=mobile'
+      @response = HTTP.get 'https://serpapi.com/search.json?q=Coffee&location=Dallas&hl=en&gl=us&source=test&device=mobile'
       @json = @response.parse
     end
 
